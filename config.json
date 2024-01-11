@@ -1,0 +1,8 @@
+{
+  "level": 3,
+  "filePrefix": "LogIt_",
+  "rollingConfig": {
+    "sizeThreshold": 1024000,
+    "timeThreshold": 86400
+  }
+}
