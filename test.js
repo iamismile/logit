@@ -11,7 +11,16 @@ async function initializeLogger() {
 
 async function main() {
   const logger = await initializeLogger();
-  logger.error('This is an error message');
+  // logger.error('This is an error message');
+  nested_func(logger);
+}
+
+function nested_func(logger) {
+  super_nested(logger);
+}
+
+function super_nested(logger) {
+  logger.critical('Testing');
 }
 
 main();
